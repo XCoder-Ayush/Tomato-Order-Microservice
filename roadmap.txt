@@ -1,0 +1,17 @@
+[+]User will place order from frontend when he clicks Pay On COD/Cash
+    [+]COD - User To Backend Server and save order in DB with status Pending
+    [+]Now Send order request to Socket backend from user to Server(status : pending)
+    [+]From socket backend after receiving order req, monocast it to Admin front-end
+    [+]Now Admin front-end will get order req with Status as Pending
+
+[+]Admin can accept the order or cancel
+    [+]For cancel/reject Order: Admin frontend to socket server regarding cancelled order status
+    [+]Socket server to user frontend about cancelled order 
+    [+]Api Call to backend to change order status as cancelled
+
+    [+]For Confirm Order : Admin frontend to socket server regarding Confirm order status
+    [+]Socket server to user frontend about confirm order 
+    [+]Api Call to backend to change order status as confirmed
+
+    Similarly for all status changes->Out For Delivery, Delivered
+

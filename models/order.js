@@ -10,6 +10,7 @@ const orderSchema = new Schema({
     },
     paymentType: { type: String, required: true },
     userId: { type: String, required: true },
+    userName: { type: String, required: true },
     amount: { type: Number, require: true },
     status: { type: String, require: true },    
     address: { type: String, require: true },    
